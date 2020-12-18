@@ -1,0 +1,39 @@
+---
+title: BPI Sports
+desc: Case study for Evelina. An all-natural essential-oil aromatherapy scent melts and ceramic wamers inspired by nature.
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.evelina
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Design & Development
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") Evelina
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") An all-natural essential-oil aromatherapy scent melts and ceramic wamers inspired by nature.
+			.embelish__1
+				img.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/shapes/l-orange-blob-1.svg" alt="")
+		.product__bg(style="background-image: url('img/case-evelina-screens.png')")
+		.product__body
+			.product__center.center
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Design a relaxing and unique e-shopping experience through Shopify.
+						p The goal of the website was to convert their etsy store into a shopify website. The design creates a zen shopping experience without overpowering the design of the products. The website is built on Shopify’s platform with dynamic sections and custom elements. The website is fully responsive and 100% optimized for speed and usability.
+				.product__preview
+					.img__container
+						img.product__pic.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/case-evelina-home.png" alt="")
+					
+			.desc
+				.embelish__2
+					img.js-parallax(data-scale="2" data-delay=".01" data-orientation="down" src="img/shapes/l-orange-blob-2.svg" alt="")
+				.desc__center.center
+					.desc__list
+						+descPreview('img/case-evelina-1.png', '')
+						+descPreview('img/case-evelina-2.png', '200')
+						+descPreview('img/case-evelina-3.png', '')
+						+descPreview('img/case-evelina-4.png', '200')
+					+descButtons('/hamsapay', '/lift')
+	+footerTiny

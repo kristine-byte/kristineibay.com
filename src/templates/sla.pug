@@ -1,0 +1,39 @@
+---
+title: Sanlorenzo
+desc: Case study for Sanlorenzo. A renowned luxury yacht manufacturer from Italy. This project was for their American division.
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.sla
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Design & Development
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") Sanlorenzo
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") A renowned luxury yacht manufacturer from Italy. This project was for their American division.
+			.embelish__1
+				img.js-parallax(data-scale="1.5" data-delay=".01" data-orientation="right" src="img/shapes/l-orange-blob-3.svg" alt="")
+		.product__bg(style="background-image: url('img/case-sla-screens.png')")
+		.product__body
+			.product__center.center
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Design a luxurious website experience that highlighted the yacht’s beauty and elegance. 
+						p The website needed to provide a luxurious, fast, and clean experience. Our challenge was to design & develop without compromising speed or image quality. The code was especially designed and thoroughly tested to ensure the website’s goals were met and launched in a short amount of time.
+				.product__preview
+					.img__container
+						img.product__pic.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/case-sla-home.png" alt="")
+						
+			.desc
+				.desc__center.center
+					.desc__gifs
+						+descGif('img/case-sla-gif.gif', 'Perfectly Animated', 'Effects were added to not only enhance the luxurious feel of the site; but to also keep the user engaged.')
+						.embelish__2
+							img.js-parallax(data-scale="2" data-delay=".01" data-orientation="down" src="img/shapes/l-orange-blob-2.svg" alt="")
+					.desc__list
+						+descPreview('img/case-sla-1.png', '')
+						+descPreview('img/case-sla-2.png', '200')
+					+descButtons('/avl', '/marker')
+	+footerTiny

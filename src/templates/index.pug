@@ -1,0 +1,200 @@
+---
+title: Kristine's Website
+desc: Welcome to Kristine's Website! I am front-end developer & designer.
+name: Index
+---
+extends layouts/_layout
+block content
+  .main  
+    +header('', 'header__burger_dark')
+    .main__bg
+      img.main__pic.js-parallax(data-scale="1.3" data-delay=".75" data-orientation="down" src="img/home-hero.svg" alt="")
+    .main__center.center
+      .main__wrap.hero
+        .main__stage.stage(data-aos="transform") Oh hello!
+          .stage__flowers
+            img(src="img/contact-blob-4.svg" alt="" data-aos="fade")
+        h1.h1.main__title.title(data-text="I’m Kristine Ibay" data-aos="fade" data-aos-delay="300") I’m Kristine Ibay
+        p.main__subtitle.h3(data-aos="animation-translate-y" data-aos-delay="500")
+          strong
+            | A 
+            span Front End Developer & Designer
+    .main__center.center 
+      .wrapper.about#about
+        .about__col1(data-aos="fade")
+          .img
+            .img__cover
+              img(src="img/about-me.png" alt="").ione
+            .float_1.float 
+              img(src="img/about-petals.svg" alt="")
+            .float_2.float 
+              img.js-parallax(data-scale="2" data-delay=".5" data-orientation="left" src="img/about-wiggle.svg" alt="")
+              
+        .about__col2
+          .about__details
+          .main__stage.stage(data-aos="animation-translate-y" data-aos-delay="300") Get to know me a bit
+          h2.h2.title(data-aos="animation-translate-y" data-aos-delay="300") A quick blurb about me
+          p(data-aos="transform" data-aos-delay="200") I am a creative front-end web developer & designer based in South Florida. I specialize in designing and developing impactful, user-friendly responsive websites using the best web practices.
+          p(data-aos="transform" data-aos-delay="200") Outside of work you can find me enjoying a cup of coffee with too much milk, playing with my doggos, making sure my plants aren't dying, and listening to live versions of my favorite songs.
+          .btn(data-aos="animation-translate-y" data-aos-delay="300")
+            a(href="#work").cta.dark
+              span View My Work
+              svg(width="13px" height="10px" viewBox="0 0 13 10")
+                path(d="M1,5 L11,5")
+                polyline(points="8 1 12 5 8 9")
+    .main__center.center
+      .wrapper.what_i_do
+        .what_i_do__col1
+          .main__stage.stage(data-aos="transform" data-aos-offset="300") I have some skills
+          h2.h2.title(data-aos="animation-translate-y" data-aos-delay="300") What I Do
+          p(data-aos="transform" data-aos-delay="200") I have a passion for good design matched with developing clean beautiful code! With almost a decade of experience, I have spent most of my career catering to clients of all shapes and blobs including the yachting/marine, health and fitness, aromatherapy industries, and more!
+          .what_i_do__icons 
+            .icon(data-aos="animation-translate-y" data-aos-delay="200")
+              img(src="img/do-1.svg" alt="")
+              p
+                small HTML/HTML5/Pug
+            .icon(data-aos="animation-translate-y" data-aos-delay="300")
+              img(src="img/do-2.svg" alt="")
+              p
+                small CSS/LESS/SASS/Tailwind
+            .icon(data-aos="animation-translate-y" data-aos-delay="400")
+              img(src="img/do-3.svg" alt="")
+              p
+                small Javascript/jQuery/Vue
+        .what_i_do__col2
+          #example
+            span Unique Website Design
+            span Experienced Developer
+            span New & Fresh Approach
+    #work
+    .portfolio
+      .main__center.center
+        .wrapper
+          .portfolio__heading
+            .main__stage.stage(data-aos="transform" data-aos-offset="300") I've worked on some projects
+            h2.h2.title(data-aos="animation-translate-y" data-aos-delay="300") Case Studies
+          .portfolio__projects 
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") BPI Sports
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design, Development, & Management
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-bpi.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="bpi").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Hamsapay
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-hamsapay.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="hamsapay").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Evelina
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Shopify Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-evelina.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="evelina").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Lift Enhanced
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Shopify Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-lift-enhanced.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="lift").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Yacht Management SF
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-yacht-management.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="ymsf").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Aviation Legal Group
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-aviation-legal-group.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="avl").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Sanlorenzo
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-sanlorenzo.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="sla").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+            .project(data-aos="fade" data-aos-offset="300")
+              .project__img
+                p.project__title(data-aos="transform" data-aos-offset="300") Marker
+                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
+                .project__img-img
+                  .reveal-image
+                    img(src="img/thumb-marker.png" alt="")
+                  .image-inner
+                  .project__btn-details
+                    .btn
+                      a(href="marker").cta
+                        span View Case Study
+                        svg(width="13px" height="10px" viewBox="0 0 13 10")
+                          path(d="M1,5 L11,5")
+                          polyline(points="8 1 12 5 8 9")
+        .portfolio__bg
+          img.bg_1.js-parallax(data-scale="2" data-delay=".5" data-orientation="up" src="img/port-blob-1.svg" alt="")
+          img.bg_2(src="img/port-blob-2.svg" alt="")
+  +wrapperDark       

@@ -1,0 +1,829 @@
+=w
+  @media only screen and (max-width: "1599px")
+    @content
+=x
+  @media only screen and (max-width: "1439px")
+    @content
+=mac
+  @media only screen and (max-width: "1365px")
+    @content
+=d
+  @media only screen and (max-width: "1279px")
+    @content
+=t
+  @media only screen and (max-width: "1023px")
+    @content
+=m
+  @media only screen and (max-width: "767px")
+    @content
+=a
+  @media only screen and (max-width: "639px")
+    @content
+=s
+  @media only screen and (max-width: "474px")
+    @content
+=f
+  font-family: 'Poppins', sans-serif
+    
+$dark: #111029
+// $bl: #00113B
+// $wh: #fff
+$purple: #4C40F7
+$red: #FF6800
+$yellow: #FFD301
+$pink: #FFBDBD
+$gray-color: #9F9FA9
+$gray-text: #6b6b6b
+
+$bl: #00113B
+$wh: #FFF
+$brown: #C48E6A
+$orange: #FFA188
+$orange-l: #FFE3D4
+$blue: #B3D5F1
+$blue-l: #E3F4FF
+$green: #4EB49C
+
+.title 
+  margin-bottom: 30px
+
+
+.btn-sss 
+  color: $bl
+  position: relative
+  margin: 0 auto
+
+
+.btn-sss::after 
+  content: attr(data-text)
+  position: absolute
+  left: 2px
+  text-shadow: -1px 0 red
+  top: 0
+  color: $bl
+  background: transparent
+  overflow: hidden
+  clip: rect(0, 900px, 0, 0)
+  animation: noise-anim 2s infinite linear alternate-reverse
+
+
+.btn-sss::before 
+  content: attr(data-text)
+  position: absolute
+  left: 2px
+  text-shadow: -1px 0 #2e2e4e
+  top: 0
+  color: $bl
+  background: transparent
+  overflow: hidden
+  clip: rect(0, 900px, 0, 0)
+  animation: noise-anim-2 3s infinite linear alternate-reverse
+
+
+@-webkit-keyframes noise-anim 
+  0% 
+    clip: rect(76px, 9999px, 32px, 0)
+  
+  5% 
+    clip: rect(51px, 9999px, 70px, 0)
+  
+  10% 
+    clip: rect(22px, 9999px, 100px, 0)
+  
+  15% 
+    clip: rect(36px, 9999px, 80px, 0)
+  
+  20% 
+    clip: rect(6px, 9999px, 82px, 0)
+  
+  25% 
+    clip: rect(32px, 9999px, 32px, 0)
+  
+  30% 
+    clip: rect(60px, 9999px, 1px, 0)
+  
+  35% 
+    clip: rect(90px, 9999px, 52px, 0)
+  
+  40% 
+    clip: rect(49px, 9999px, 66px, 0)
+  
+  45% 
+    clip: rect(88px, 9999px, 73px, 0)
+  
+  50% 
+    clip: rect(20px, 9999px, 23px, 0)
+  
+  55% 
+    clip: rect(7px, 9999px, 51px, 0)
+  
+  60% 
+    clip: rect(20px, 9999px, 64px, 0)
+  
+  65% 
+    clip: rect(92px, 9999px, 76px, 0)
+  
+  70% 
+    clip: rect(95px, 9999px, 71px, 0)
+  
+  75% 
+    clip: rect(73px, 9999px, 32px, 0)
+  
+  80% 
+    clip: rect(17px, 9999px, 55px, 0)
+  
+  85% 
+    clip: rect(32px, 9999px, 22px, 0)
+  
+  90% 
+    clip: rect(90px, 9999px, 18px, 0)
+  
+  95% 
+    clip: rect(22px, 9999px, 64px, 0)
+  
+  100% 
+    clip: rect(25px, 9999px, 18px, 0)
+  
+
+
+@keyframes noise-anim 
+  0% 
+    clip: rect(76px, 9999px, 32px, 0)
+  
+  5% 
+    clip: rect(51px, 9999px, 70px, 0)
+  
+  10% 
+    clip: rect(22px, 9999px, 100px, 0)
+  
+  15% 
+    clip: rect(36px, 9999px, 80px, 0)
+  
+  20% 
+    clip: rect(6px, 9999px, 82px, 0)
+  
+  25% 
+    clip: rect(32px, 9999px, 32px, 0)
+  
+  30% 
+    clip: rect(60px, 9999px, 1px, 0)
+  
+  35% 
+    clip: rect(90px, 9999px, 52px, 0)
+  
+  40% 
+    clip: rect(49px, 9999px, 66px, 0)
+  
+  45% 
+    clip: rect(88px, 9999px, 73px, 0)
+  
+  50% 
+    clip: rect(20px, 9999px, 23px, 0)
+  
+  55% 
+    clip: rect(7px, 9999px, 51px, 0)
+  
+  60% 
+    clip: rect(20px, 9999px, 64px, 0)
+  
+  65% 
+    clip: rect(92px, 9999px, 76px, 0)
+  
+  70% 
+    clip: rect(95px, 9999px, 71px, 0)
+  
+  75% 
+    clip: rect(73px, 9999px, 32px, 0)
+  
+  80% 
+    clip: rect(17px, 9999px, 55px, 0)
+  
+  85% 
+    clip: rect(32px, 9999px, 22px, 0)
+  
+  90% 
+    clip: rect(90px, 9999px, 18px, 0)
+  
+  95% 
+    clip: rect(22px, 9999px, 64px, 0)
+  
+  100% 
+    clip: rect(25px, 9999px, 18px, 0)
+  
+
+
+@-webkit-keyframes noise-anim-2 
+  0% 
+    clip: rect(85px, 9999px, 6px, 0)
+  
+  5% 
+    clip: rect(49px, 9999px, 81px, 0)
+  
+  10% 
+    clip: rect(54px, 9999px, 63px, 0)
+  
+  15% 
+    clip: rect(76px, 9999px, 70px, 0)
+  
+  20% 
+    clip: rect(94px, 9999px, 89px, 0)
+  
+  25% 
+    clip: rect(3px, 9999px, 88px, 0)
+  
+  30% 
+    clip: rect(31px, 9999px, 31px, 0)
+  
+  35% 
+    clip: rect(18px, 9999px, 2px, 0)
+  
+  40% 
+    clip: rect(55px, 9999px, 53px, 0)
+  
+  45% 
+    clip: rect(38px, 9999px, 19px, 0)
+  
+  50% 
+    clip: rect(3px, 9999px, 9px, 0)
+  
+  55% 
+    clip: rect(32px, 9999px, 67px, 0)
+  
+  60% 
+    clip: rect(56px, 9999px, 55px, 0)
+  
+  65% 
+    clip: rect(71px, 9999px, 63px, 0)
+  
+  70% 
+    clip: rect(99px, 9999px, 63px, 0)
+  
+  75% 
+    clip: rect(75px, 9999px, 91px, 0)
+  
+  80% 
+    clip: rect(93px, 9999px, 20px, 0)
+  
+  85% 
+    clip: rect(45px, 9999px, 99px, 0)
+  
+  90% 
+    clip: rect(74px, 9999px, 92px, 0)
+  
+  95% 
+    clip: rect(22px, 9999px, 43px, 0)
+  
+  100% 
+    clip: rect(21px, 9999px, 96px, 0)
+  
+
+
+@keyframes noise-anim-2 
+  0% 
+    clip: rect(85px, 9999px, 6px, 0)
+  
+  5% 
+    clip: rect(49px, 9999px, 81px, 0)
+  
+  10% 
+    clip: rect(54px, 9999px, 63px, 0)
+  
+  15% 
+    clip: rect(76px, 9999px, 70px, 0)
+  
+  20% 
+    clip: rect(94px, 9999px, 89px, 0)
+  
+  25% 
+    clip: rect(3px, 9999px, 88px, 0)
+  
+  30% 
+    clip: rect(31px, 9999px, 31px, 0)
+  
+  35% 
+    clip: rect(18px, 9999px, 2px, 0)
+  
+  40% 
+    clip: rect(55px, 9999px, 53px, 0)
+  
+  45% 
+    clip: rect(38px, 9999px, 19px, 0)
+  
+  50% 
+    clip: rect(3px, 9999px, 9px, 0)
+  
+  55% 
+    clip: rect(32px, 9999px, 67px, 0)
+  
+  60% 
+    clip: rect(56px, 9999px, 55px, 0)
+  
+  65% 
+    clip: rect(71px, 9999px, 63px, 0)
+  
+  70% 
+    clip: rect(99px, 9999px, 63px, 0)
+  
+  75% 
+    clip: rect(75px, 9999px, 91px, 0)
+  
+  80% 
+    clip: rect(93px, 9999px, 20px, 0)
+  
+  85% 
+    clip: rect(45px, 9999px, 99px, 0)
+  
+  90% 
+    clip: rect(74px, 9999px, 92px, 0)
+  
+  95% 
+    clip: rect(22px, 9999px, 43px, 0)
+  
+  100% 
+    clip: rect(21px, 9999px, 96px, 0)
+  
+
+
+.main__subtitle 
+  font-size: 30px
+  letter-spacing: -0.75px
+  color: $bl
+  span 
+    color: $orange
+  
+.cta 
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: auto
+  padding: 0px 22px
+  height: 60px
+  -webkit-transition: all 0.2s ease
+  transition: all 0.2s ease
+  &:before 
+    content: ""
+    position: absolute
+    top: 0
+    left: -10px
+    display: block
+    border-radius: 30px
+    background: rgba(255, 73, 82, 0)
+    border: 1px solid $orange
+    border-right: 1px solid transparent
+    width: 60px
+    height: 60px
+    line-height: 1
+    -webkit-transition: all 0.3s ease
+    transition: all 0.3s ease
+  
+  &:hover 
+    &:before 
+      border: 1px solid $orange
+      width: 108%
+      background: $orange
+	
+    svg 
+      -webkit-transform: translateX(0)
+          transform: translateX(0)
+      stroke: $wh
+    
+  
+  span 
+    color: $wh
+    position: relative
+    font-size: 18px
+    line-height: 0.56
+    font-weight: 900
+    vertical-align: middle
+  
+  svg 
+    position: relative
+    margin-left: 10px
+    fill: none
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke: $bl
+    stroke-width: 2
+    -webkit-transform: translateX(-5px)
+            transform: translateX(-5px)
+    -webkit-transition: all 0.3s ease
+    transition: all 0.3s ease
+  
+  &.dark 
+    &:hover 
+      span 
+        color: $wh
+      
+      svg 
+        fill: $wh
+      
+    
+    span 
+      color: $bl
+    
+    svg 
+      fill: $bl
+    
+  
+
+
+.hero 
+  padding: 160px 0
+  .stage
+    .stage__flowers
+      position: absolute
+      top: -55px
+      left: -42px
+      width: 100px
+      transform: rotate(163deg)
+      img
+        max-width: 100%
+
+.about 
+  display: grid
+  grid-auto-columns: 1fr .75fr
+  grid-gap: 30px
+  grid-auto-flow: column
+  padding: 160px 0px
+  +t
+    padding: 80px 0px
+    grid-auto-columns: .75fr 1fr
+    align-content: center
+  +m
+    display: block
+  p 
+    opacity: 0.6
+    font-size: 16px
+    line-height: 1.88
+    color: $bl
+    margin-bottom: 50px
+  
+  .shape-image 
+    position: absolute
+    top: 9%
+    left: -22%
+  
+  &__col1 
+    position: relative
+    img 
+      max-width: 100%
+      display: block;
+    .img
+      position: relative
+      .float 
+        position: absolute
+        img 
+          width: auto
+        &_1 
+          top: 10%
+          right: 20px
+          +t
+            top: 0
+            right: -30px
+          +m
+            top: 0
+            right: -20px
+        &_2 
+          bottom: 10%
+          left: -100px
+          z-index: -1
+      &__cover
+        position: relative
+        width: 75%
+        border-radius: 12px
+        margin-left: auto
+        margin-right: auto
+        overflow: hidden
+        +t
+          top: -80px
+          width: 80%
+        +m
+          width: 80%
+          margin-left: auto
+          margin-right: auto
+        img 
+          //margin-left: 75px
+          width: 100%
+          border-radius: 12px
+          overflow: hidden
+          +m
+            margin-left: 0
+            
+      &__bg 
+        border-radius: 12px
+        position: absolute
+        top: 70px
+        z-index: -1
+        overflow: hidden
+        .itwo
+          width: 120%
+          max-width: 120%
+          margin-top: -20%
+          margin-left: -20%
+        +t 
+          top: -80px
+        +m
+          top: -60px
+          right: 80px
+          width: 100%;
+      &__circle 
+        position: absolute
+        z-index: -2
+        top: -15%
+        left: -20%
+      
+    
+  
+  &__col2 
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-content: flex-start
+    align-items: flex-start
+  
+
+
+.what_i_do 
+  padding: 160px 0px
+  display: grid
+  grid-auto-columns: 1fr 1fr
+  grid-gap: 30px
+  grid-auto-flow: column
+  +t
+    display: block
+    position: relative
+  +m
+    padding: 80px 0px
+  &__icons 
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    .icon 
+      margin-right: 30px
+      img
+        height: 70px
+        width: 90px
+        object-fit: contain
+        object-position: left bottom
+    
+  &__col1 
+    p 
+      opacity: 0.6
+      font-size: 16px
+      line-height: 1.88
+      color: $bl
+      margin-bottom: 50px
+    
+  
+  &__col2 
+    position: relative
+    z-index: -1
+    +t
+      display: none
+    span 
+      font-size: 132px
+      line-height: 134px
+      letter-spacing: -10px
+      color: #e0e0e0
+      word-break: break-all
+      max-width: 100%
+      font-weight: 600
+      +t
+        font-size: 80px
+
+.portfolio 
+  padding: 160px 0px
+  position: relative
+  +m
+    padding: 80px 0px
+  &__bg
+    z-index: -1
+    position: absolute
+    top: 0
+    text-align: right
+    right: 0
+    width: 600px
+    +mac
+      right:  -82px
+      width: 400px
+    +m
+      right: -30px
+      width: 300px
+    img 
+      max-width: 100%
+    .bg_1
+      +m
+        width: 80px
+        margin-right: 40px
+  &__heading 
+  &__projects 
+    height: auto
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-around
+    +t
+      justify-content: space-between
+    +m
+      display: block
+  .project 
+    padding-top: 80px
+    width: 500px
+    +t
+      width: 47%
+    +m
+      width: 100%
+    
+    &:hover 
+      .image-inner
+        opacity: 1
+      .project__btn-details 
+        opacity: 1
+        -webkit-transform: translateY(0px)
+                transform: translateY(0px)
+
+    &:nth-child(even) 
+      padding-top: 180px
+      +m
+        padding-top: 80px
+    
+    &__title 
+      font-size: 25px
+      letter-spacing: -0.63px
+      color: $bl
+      margin-bottom: 10px
+    
+    &__subtitle 
+      opacity: 0.4
+      font-size: 18px
+      line-height: 1.11
+      letter-spacing: -0.25px
+      color: $bl
+      margin-bottom: 35px
+      
+    img 
+      display: block
+      width: 100%
+      
+    .reveal-image 
+      opacity: 0
+      -webkit-transition: all 1s
+      transition: all 1s
+      img 
+        width: 100%
+      
+    
+    &__img 
+      .image-inner 
+        -webkit-transition: all .4s
+        transition: all .4s
+        position: absolute
+        height: 100%
+        width: 100%
+        top: 0
+        opacity: 0
+        bottom: 0
+        right: 0
+        left: 0
+        &:before 
+          content: ''
+          background-color: rgba(0, 0, 0, 0.4)
+          position: absolute
+          height: 100%
+          width: 100%
+          top: 0px
+          bottom: 0
+          right: 0
+          left: 0px
+          border-radius: 0px
+          -webkit-transition: all .4s
+          transition: all .4s
+          pointer-events: none
+        
+      
+    
+    &__img-img 
+      cursor: pointer
+      position: relative
+      border-radius: 12px
+      overflow: hidden
+    
+    &__btn-details 
+      -webkit-transition: all .4s
+      transition: all .4s
+      position: absolute
+      height: 100%
+      width: 100%
+      display: -ms-grid
+      display: grid
+      place-items: center
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      opacity: 0
+      -webkit-transform: translateY(30px)
+              transform: translateY(30px)
+      .cta 
+        &:before 
+          border: 1px solid rgba(255, 255, 255, 0.3)
+          border-right: 1px solid transparent
+        
+        span 
+          //color: $wh
+        
+        svg 
+          stroke: $wh
+        
+      
+    
+  
+
+
+.reveal 
+  position: relative
+  width: 100%
+  opacity: 1 !important
+  -webkit-transition: opacity 1s
+  transition: opacity 1s
+
+
+/*.reveal::before 
+  content: ''
+  background: rgba($wh, .2)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  -webkit-transform: scaleX(0)
+          transform: scaleX(0)
+  -webkit-transform-origin: 0% 0% 0px
+          transform-origin: 0% 0% 0px
+  -webkit-animation: reveal 1s 0s ease-in-out forwards
+          animation: reveal 1s 0s ease-in-out forwards
+  z-index: 99
+
+
+/*.reveal::after 
+  content: ''
+  background: rgba($wh, .2)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  -webkit-transform: scaleX(0)
+          transform: scaleX(0)
+  -webkit-transform-origin: 0% 0% 0px
+          transform-origin: 0% 0% 0px
+  -webkit-animation: reveal 1s .5s ease-in-out forwards
+          animation: reveal 1s .5s ease-in-out forwards
+  z-index: 99
+
+
+/*@-webkit-keyframes reveal 
+  0% 
+    -webkit-transform: scaleX(0)
+            transform: scaleX(0)
+  
+  50% 
+    -webkit-transform: scaleX(1)
+            transform: scaleX(1)
+    -webkit-transform-origin: 0% 0% 0px
+            transform-origin: 0% 0% 0px
+  
+  51% 
+    -webkit-transform-origin: 100% 50% 0px
+            transform-origin: 100% 50% 0px
+  
+  100% 
+    -webkit-transform: scaleX(0)
+            transform: scaleX(0)
+    -webkit-transform-origin: 100% 50% 0px
+            transform-origin: 100% 50% 0px
+  
+
+
+/*@keyframes reveal 
+  0% 
+    -webkit-transform: scaleX(0)
+            transform: scaleX(0)
+  
+  50% 
+    -webkit-transform: scaleX(1)
+            transform: scaleX(1)
+    -webkit-transform-origin: 0% 0% 0px
+            transform-origin: 0% 0% 0px
+  
+  51% 
+    -webkit-transform-origin: 100% 50% 0px
+            transform-origin: 100% 50% 0px
+  
+  100% 
+    -webkit-transform: scaleX(0)
+            transform: scaleX(0)
+    -webkit-transform-origin: 100% 50% 0px
+            transform-origin: 100% 50% 0px
+

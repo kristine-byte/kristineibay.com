@@ -1,0 +1,42 @@
+---
+title: Aviation Legal Group
+desc: Case study for Aviation Legal Group. A leading law and litigation practice for the general and commercial aviation industries.
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.avl
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Design & Development
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") Aviation Legal Group
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") A leading law and litigation practice for the general and commercial aviation industries.
+			.embelish__1
+				img(src="img/shapes/green-blob-1.svg" alt="")
+		.product__bg(style="background-image: url('img/case-avl-screens.png')")
+		.product__body
+			.product__center.center
+				.embelish__2
+					img(src="img/shapes/green-blob-2.svg" alt="")
+				.embelish__3
+					img(src="img/shapes/green-wiggle-1.svg" alt="")
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p We had to design & develop an eye catching website for aviation law.
+						p Competitor websites designs were boring and felt untrustworthy. This redesign needed to be engaging, credible, and user-friendly. This was achieved by clean and usable design, breaking up the content with quality images, selecting a friendlier color scheme, and interesting parallax & hover effects. 
+						p This website was designed and built in 2016.
+				.product__preview
+					.img__container
+						img.product__pic.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/case-avl-home.png" alt="")
+						
+			.desc
+				.desc__center.center
+					.desc__gifs
+						+descGif('img/case-avl-gif.gif', 'Engaging Animations', 'Animations and hover effects were added to make sure that the website was engaging even though the content can be boring.')
+					.desc__list
+						+descPreview('img/case-avl-1.png', '')
+						+descPreview('img/case-avl-2.png', '200')
+					+descButtons('/ymsf', '/sla')
+	+footerTiny

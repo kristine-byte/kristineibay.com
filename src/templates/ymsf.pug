@@ -1,0 +1,42 @@
+---
+title: Yacht Management South Florida
+desc: Case study for Yacht Management South Florida. A full-service boatyard and marina equipped to meet all of your boating needs. 
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.ymsf
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Design & Development
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") Yacht Management South Florida
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") A full-service boatyard and marina equipped to meet all of your boating needs. 
+			.embelish__1
+				img(src="img/shapes/l-blue-wiggle-1.svg" alt="")
+		.product__bg(style="background-image: url('img/case-ym-sceens.png')")
+		.product__body
+			.product__center.center
+				.embelish__2
+					img(src="img/shapes/l-blue-blob-5.svg" alt="")
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Design & develop a website that highlighted the two types of services the client provides.
+						p The biggest challenge of this project was to strategically design a website with alot of content, without being too overwhelming or boring. This was solved by breaking up the space with color and images. Keep in mind this website was designed and developed in 2017 and it still works!
+				.product__preview
+					.img__container
+						img.product__pic.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/case-ym-home.png" alt="")
+						
+			.desc
+				.desc__center.center
+					.desc__gifs
+						+descGif('img/case-ym-gif.gif', 'Split Home Screen', 'The home screen was especially designed to divide the two types of services visually while funneling the user strategically to make sure that they are getting to the information needed as fast as possible.')
+						.embelish__3
+							img.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="down" src="img/shapes/l-blue-blob-1.svg" alt="")
+							img(src="img/shapes/l-blue-blob-2.svg" alt="")
+					.desc__list
+						+descPreview('img/case-ym-1.png', '')
+						+descPreview('img/case-ym-2.png', '200')
+					+descButtons('/lift', '/avl')
+	+footerTiny

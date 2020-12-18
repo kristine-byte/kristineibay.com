@@ -1,0 +1,40 @@
+---
+title: Hamsa Pay | Case Study
+desc: Case study for Hamsa Pay. A revolutionary new cross border payment platform for the B2B e-commerce payments market.
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.hamsapay
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Development
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") HamsaPay
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") A revolutionary new cross border payment platform for the B2B e-commerce payments market.
+			.embelish__1
+				img(src="img/shapes/l-orange-blob-3.svg" alt="")
+		.product__bg(style="background-image: url('img/case-hamsapay-screens.png')")
+		.product__body
+			.embelish__2
+				img(src="img/shapes/l-orange-blob-4.svg" alt="")
+			.product__center.center
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Built a lightweight and pixel perfect website using the best web practices. 
+						p The website design was provided by the client which included a lot of specific animations and effects including parallax, horizontal scrolls, and scroll in animations. Each resolution was reviewed to ensure that everything works beautifully no matter what the device or window size.
+			.desc
+				.desc__center.center
+					.desc__gifs
+						.embelish__3
+							img(src="img/shapes/l-brown-wiggle-1.svg" alt="")
+						+descGif('img/case-hamsapay-gif-1.gif', 'Engaging Animations', 'Each animation was carefully inspected and coded to create an engaging and optimized experience.')
+						+descGif('img/case-hamsapay-gif-2.gif', 'Horizontal Scroll', 'A horizontal scroll using the mouse wheel was requested and delivered with the use of a parallax jQuery plug-in.')
+					.desc__full
+						+descPreview('img/case-hamsapay-code.png', '200')
+					.desc__list
+						+descPreview('img/case-hamsapay-1.png', '')
+						+descPreview('img/case-hamsapay-2.png', '200')
+					+descButtons('/bpi', '/evelina')
+	+footerTiny

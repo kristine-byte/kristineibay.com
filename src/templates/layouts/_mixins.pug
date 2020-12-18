@@ -1,0 +1,111 @@
+mixin i(name)
+	svg.icon(class='icon-' + name)
+		use(xlink:href='img/sprite.svg#icon-' + name)
+
+mixin header(classHeader, classBurger)
+	.header.js-header#header(class=classHeader)
+		.header__center.center
+			a.header__logo(href="index.html") KRISTINE IBAY
+				img.header__pic(src="img/logo.svg" alt="")
+			.header__social.header__social_main
+			button.header__burger.js-header-burger(class=classBurger)
+		.header__wrapper.js-header-wrapper
+			.header__bg
+				img(src="img/menu-bg.svg" alt="")
+			.header__preview
+				a.header__logo(href="index.html") KRISTINE IBAY
+					img.header__pic(src="img/logo.svg" alt="")
+				//.header__img
+					img.header__pic(src="img/bg-header.png" alt="")
+			.header__center.center
+				//- .header__contacts
+					.header__line
+						.header__text 
+							p.stage Hey! Are you interested in working together?
+							p Shoot me an email below!
+					a.header__line(href="mailto: kristineibay@gmail.com")
+						//.header__icon
+							//+i('email')
+						u kristineibay@gmail.com
+				nav.header__nav
+					a.header__item(href="../#about")
+						span About
+					a.header__item(href="../#work")
+						span Work
+					a.header__item(href="../#contact")
+						span Contact
+            
+mixin wrapperDark
+	.wrapper.wrapper_dark
+		+contacts
+		+footerTiny
+
+mixin contacts
+	.contacts
+		.contacts__bg 
+			img.bg_1.js-parallax(data-scale="1.5" data-delay=".5" data-orientation="up" src="img/contact-blob-1.svg" alt="")
+			img(src="img/contact-blob-2.svg" alt="").bg_2
+		.contacts__center.center
+			#contact
+			.contacts__container
+				.contacts__wrap
+					.contacts__stage.stage(data-aos="animation-scale-y") Are you impressed? Please say yes 🙏
+					.contacts__info.title.h4(data-aos="animation-scale-y" data-aos-delay="400") If you said yes to above, let’s chat!
+				.contacts__row#contact-form-status.hide
+				.contacts__row
+					form.contacts__form#contact-form(data-aos="animation-translate-y" data-aos-delay="200" action="https://formspree.io/f/xdopwrqn" method="post")
+						.contacts__field.field
+							.field__wrap
+								input.field__input#name(type="text" name="name" placeholder="Name")
+								.field__icon
+									+i('profile')
+						.contacts__field.field
+							.field__wrap
+								input.field__input#email(type="email" name="_replyto" placeholder="Email")
+								.field__icon
+									+i('send')
+						.contacts__field.field.field_textarea
+							.field__wrap
+								textarea.field__textarea#message(name="message" placeholder="Message")
+								.field__icon
+									+i('message')
+						.contacts__btn
+							button.cta.dark#contact-form-button(type="submit")
+									span Send Message
+									svg(width="13px" height="10px" viewBox="0 0 13 10")
+										path(d="M1,5 L11,5")
+										polyline(points="8 1 12 5 8 9")
+			.footer__title.h3 I hope you enjoyed your time here!
+		.contacts__bg2
+			img.bg2_1.js-parallax(src="img/contact-blob-3.svg" alt="" data-scale="1.15" data-delay=".5" data-orientation="down")
+			img.bg2_2(src="img/contact-blob-4.svg" alt="" data-aos="fade")
+
+mixin footerTiny
+	.footer.tiny
+		.footer__center.center
+			.footer__body
+				.footer__copyright.h6 Thank you for visiting.
+				a.footer__scroll.js-scroll(href="#header") Back to top
+
+mixin descPreview(src, delay)
+	.desc__preview(data-aos="animation-translate-y" data-aos-delay=delay)
+		img.desc__pic(src=src alt="")
+
+mixin descGif(src, title, desc)
+	.desc__gif
+		.text(data-aos="animation-scale-y"  data-aos-delay="200")
+			p.h5= title
+			p= desc
+		.img(data-aos="animation-translate-y" data-aos-delay="300")
+			img(src=src alt=title)
+			
+mixin descButtons(prev, next)
+	.desc__btns(data-aos="animation-scale-y")
+		a.desc__btn.btn.prev(href=prev)
+			svg(width="13px" height="10px" viewBox="0 0 13 10")
+				path(d="M1,5 L11,5")
+				polyline(points="8 1 12 5 8 9")
+		a.desc__btn.btn.next(href=next)
+			svg(width="13px" height="10px" viewBox="0 0 13 10")
+				path(d="M1,5 L11,5")
+				polyline(points="8 1 12 5 8 9")

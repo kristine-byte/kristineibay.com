@@ -1,0 +1,40 @@
+---
+title: Lift Enhanced | Case Study
+desc: Case study for Lift Enhanced. An e-store that sells athletic/athleisure wear, plus virtual personalized workout plans with professionals in the U.S.
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.lift
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Design & Development
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") Lift Enhanced
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") Lift Enhanced is an e-store that sells athletic/athleisure wear, plus virtual personalized workout plans with professionals in the U.S.
+			.embelish__1
+				img(src="img/shapes/l-blue-blob-3.svg" alt="")
+				img.js-parallax(data-scale="1.2" data-delay=".5" data-orientation="up" src="img/shapes/l-blue-blob-4.svg" alt="")
+		.product__bg(style="background-image: url('img/case-lift-screens.png')")
+		.product__body
+			.product__center.center
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Design an eye catching e-commerce website focused on customers with active lifestyles.
+						p This website was built on Shopify using a theme as a base. The theme was then customized to fit the client's needs. Customizations included, but not limited to, coach pages and sections, work out plan product pages, email notification updates that added a custom link to the purchased workout plans, and more.
+				.product__preview
+					.img__container
+						img.product__pic.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/case-lift-home.png" alt="")
+					
+			.desc
+				.desc__center.center
+					.embelish__2
+						img(src="img/shapes/l-blue-blob-5.svg" alt="")
+					.desc__list
+						+descPreview('img/case-lift-1.png', '')
+						+descPreview('img/case-lift-2.png', '200')
+						+descPreview('img/case-lift-3.png', '')
+						+descPreview('img/case-lift-4.png', '200')
+					+descButtons('/evelina', '/ymsf')
+	+footerTiny

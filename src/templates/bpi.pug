@@ -1,0 +1,50 @@
+---
+title: BPI Sports | Case Study
+desc: Case study for BPI Sport's website. A supplement company with a heavy focus on bodybuilders and athletes.
+---
+extends layouts/_layout
+block content
+	+header('', 'header__burger_dark')
+	.product.bpi
+		.product__head
+			.product__center.center
+				.product__wrap
+					.product__stage.stage(data-aos="animation-scale-y") Design, Development, Management
+					h1.product__title.title.h1(data-aos="animation-scale-y" data-aos-delay="150") BPI Sports
+					.product__info.h5(data-aos="animation-scale-y" data-aos-delay="300") A supplement company with a heavy focus on bodybuilders and athletes.
+				.embelish__1
+					img(src="img/shapes/l-blue-wiggle-1.svg" alt="")
+		.product__bg(style="background-image: url('img/case-bpi-screens.png')")
+		.product__body
+			.product__center.center
+				.product__row
+					.product__overview.h4(data-aos="animation-scale-y") Overview
+					.product__content.content(data-aos="animation-scale-y" data-aos-delay="200")
+						p Redesigned and modernized BPI’s website to align with modern standards and then built it from scratch using Shopify & Craft CMS, which allowed the marketing team to update pages more efficiently.
+						p As their full-time front end designer and developer, I was responsible for the health and functionality of the website. The website was redesigned to be fully responsive and user friendly. Clean, beautiful code was developed for future-proofing and ease of use for collaborative purposes. 
+				.product__preview
+					.img__container
+						img.product__pic.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="up" src="img/case-bpi-home.png" alt="")
+					.embelish__2
+						img.js-parallax(data-scale="1.25" data-delay=".01" data-orientation="down" src="img/shapes/l-blue-blob-1.svg" alt="")
+						img(src="img/shapes/l-blue-blob-2.svg" alt="")
+			.highlights
+				.highlights__center.center
+					p.h3(data-aos="animation-scale-y") Highlights
+					ul(data-aos="animation-scale-y" data-aos-delay="200")
+						li Fully Responsive Design 
+						li Custom Shopify & Craft CMS Code from Scratch
+						li User friendly integrations for marketing team
+				.embelish__3
+					img(src="img/shapes/l-blue-blob-3.svg" alt="")
+					img.js-parallax(data-scale="1.2" data-delay=".5" data-orientation="down" src="img/shapes/l-blue-blob-4.svg" alt="")
+						
+			.desc
+				.desc__center.center
+					.desc__list
+						+descPreview('img/case-bpi-1.png', '')
+						+descPreview('img/case-bpi-2.png', '200')
+						+descPreview('img/case-bpi-3.png', '')
+						+descPreview('img/case-bpi-4.png', '200')
+					+descButtons('/marker', '/hamsapay')
+	+footerTiny
