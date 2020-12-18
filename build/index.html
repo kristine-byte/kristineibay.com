@@ -1,3 +1,6 @@
+<!--mixin i(name)//svg.icon(class='icon-' + name)
+	//use(xlink:href='img/sprite.svg#icon-' + name)
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -275,23 +278,17 @@
                 <form class="contacts__form" id="contact-form" data-aos="animation-translate-y" data-aos-delay="200" action="https://formspree.io/f/xdopwrqn" method="post">
                   <div class="contacts__field field">
                     <div class="field__wrap"><input class="field__input" id="name" type="text" name="name" placeholder="Name" />
-                      <div class="field__icon"><svg class="icon icon-profile">
-                          <use xlink:href="img/sprite.svg#icon-profile"></use>
-                        </svg></div>
+                      <!--.field__icon//+i('profile')-->
                     </div>
                   </div>
                   <div class="contacts__field field">
                     <div class="field__wrap"><input class="field__input" id="email" type="email" name="_replyto" placeholder="Email" />
-                      <div class="field__icon"><svg class="icon icon-send">
-                          <use xlink:href="img/sprite.svg#icon-send"></use>
-                        </svg></div>
+                      <!--.field__icon//+i('send')-->
                     </div>
                   </div>
                   <div class="contacts__field field field_textarea">
                     <div class="field__wrap"><textarea class="field__textarea" id="message" name="message" placeholder="Message"></textarea>
-                      <div class="field__icon"><svg class="icon icon-message">
-                          <use xlink:href="img/sprite.svg#icon-message"></use>
-                        </svg></div>
+                      <!--.field__icon//+i('message')-->
                     </div>
                   </div>
                   <div class="contacts__btn"><button class="cta dark" id="contact-form-button" type="submit"><span>Send Message</span><svg width="13px" height="10px" viewBox="0 0 13 10">

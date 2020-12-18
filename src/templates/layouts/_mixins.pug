@@ -1,6 +1,6 @@
-mixin i(name)
-	svg.icon(class='icon-' + name)
-		use(xlink:href='img/sprite.svg#icon-' + name)
+//mixin i(name)
+	//svg.icon(class='icon-' + name)
+		//use(xlink:href='img/sprite.svg#icon-' + name)
 
 mixin header(classHeader, classBurger)
 	.header.js-header#header(class=classHeader)
@@ -57,18 +57,18 @@ mixin contacts
 						.contacts__field.field
 							.field__wrap
 								input.field__input#name(type="text" name="name" placeholder="Name")
-								.field__icon
-									+i('profile')
+								//.field__icon
+									//+i('profile')
 						.contacts__field.field
 							.field__wrap
 								input.field__input#email(type="email" name="_replyto" placeholder="Email")
-								.field__icon
-									+i('send')
+								//.field__icon
+									//+i('send')
 						.contacts__field.field.field_textarea
 							.field__wrap
 								textarea.field__textarea#message(name="message" placeholder="Message")
-								.field__icon
-									+i('message')
+								//.field__icon
+									//+i('message')
 						.contacts__btn
 							button.cta.dark#contact-form-button(type="submit")
 									span Send Message
