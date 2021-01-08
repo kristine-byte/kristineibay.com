@@ -5,7 +5,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>BPI Sports | Case Study</title>
+    <title>BPI Sports</title>
     <meta name="description" content="Case study for BPI Sport's website. A supplement company with a heavy focus on bodybuilders and athletes.">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -48,17 +48,42 @@
       }
 
     </script>
+    <style>
+      .loader canvas
+      {
+        display: block;
+        position: absolute;
+        color: red;
+      }
+
+      .loader p
+      {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 9;
+        color: #00113B;
+        text-align: center;
+        width: 400px;
+        margin-left: -200px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+    </style>
   </head>
   <body>
-    <div class="loader"></div>
+    <div class="loader" id="loader">
+      <p>One moment please</p>
+    </div>
     <div class="page">
       <div class="header js-header" id="header">
-        <div class="header__center center"><a class="header__logo" href="index.html">KRISTINE IBAY<img class="header__pic" src="img/logo.svg" alt="" /></a>
+        <div class="header__center center"><a class="header__logo" href="/">KRISTINE IBAY<img class="header__pic" src="img/logo.svg" alt="" /></a>
           <div class="header__social header__social_main"></div><button class="header__burger js-header-burger header__burger_dark"></button>
         </div>
         <div class="header__wrapper js-header-wrapper">
           <div class="header__bg"><img src="img/menu-bg.svg" alt="" /></div>
-          <div class="header__preview"><a class="header__logo" href="index.html">KRISTINE IBAY<img class="header__pic" src="img/logo.svg" alt="" /></a>
+          <div class="header__preview"><a class="header__logo" href="/">KRISTINE IBAY<img class="header__pic" src="img/logo.svg" alt="" /></a>
             <!--.header__imgimg.header__pic(src="img/bg-header.png" alt="")-->
           </div>
           <div class="header__center center">
@@ -131,8 +156,8 @@
       </div>
       <div class="cursor"></div>
     </div>
+    <script src="js/loader.js"></script>
     <script src="js/app.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
   </body>
 </html>

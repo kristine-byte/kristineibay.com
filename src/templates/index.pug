@@ -13,7 +13,7 @@ block content
       .main__wrap.hero
         .main__stage.stage(data-aos="transform") Oh hello!
           .stage__flowers
-            img(src="img/contact-blob-4.svg" alt="" data-aos="fade")
+            img.lazy(data-src="img/contact-blob-4.svg" alt="" data-aos="fade")
         h1.h1.main__title.title(data-text="I’m Kristine Ibay" data-aos="fade" data-aos-delay="300") I’m Kristine Ibay
         p.main__subtitle.h3(data-aos="animation-translate-y" data-aos-delay="500")
           strong
@@ -74,127 +74,22 @@ block content
             .main__stage.stage(data-aos="transform" data-aos-offset="300") I've worked on some projects
             h2.h2.title(data-aos="animation-translate-y" data-aos-delay="300") Case Studies
           .portfolio__projects 
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") BPI Sports
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design, Development, & Management
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-bpi.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="bpi").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Hamsapay
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-hamsapay.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="hamsapay").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Evelina
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Shopify Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-evelina.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="evelina").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Lift Enhanced
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Shopify Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-lift-enhanced.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="lift").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Yacht Management SF
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-yacht-management.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="ymsf").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Aviation Legal Group
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-aviation-legal-group.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="avl").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Sanlorenzo
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-sanlorenzo.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="sla").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
-            .project(data-aos="fade" data-aos-offset="300")
-              .project__img
-                p.project__title(data-aos="transform" data-aos-offset="300") Marker
-                p.project__subtitle(data-aos="transform" data-aos-offset="300") Design & Development
-                .project__img-img
-                  .reveal-image
-                    img(src="img/thumb-marker.png" alt="")
-                  .image-inner
-                  .project__btn-details
-                    .btn
-                      a(href="marker").cta
-                        span View Case Study
-                        svg(width="13px" height="10px" viewBox="0 0 13 10")
-                          path(d="M1,5 L11,5")
-                          polyline(points="8 1 12 5 8 9")
+          
+            +projectThumb('BPI Sports','Design, Development, & Management','img/thumb-bpi.png','./bpi')
+            +projectThumb('Hamsapay','Development','img/thumb-hamsapay.png','./hamsapay')
+            +projectThumb('Evelina','Design & Shopify Development','img/thumb-evelina.png','./evelina')
+            +projectThumb('Lift Enhanced','Design & Shopify Development','img/thumb-lift-enhanced.png','./lift')
+            +projectThumb('Yacht Management SF','Design & Development','img/thumb-yacht-management.png','./ymsf')
+            +projectThumb('Aviation Legal Group','Design & Development','img/thumb-aviation-legal-group.png','./avl')
+            +projectThumb('Sanlorenzo','Design & Development','img/thumb-sanlorenzo.png','./sla')
+            +projectThumb('Marker','Design & Development','img/thumb-marker.png','./marker')
+						
         .portfolio__bg
           img.bg_1.js-parallax(data-scale="2" data-delay=".5" data-orientation="up" src="img/port-blob-1.svg" alt="")
           img.bg_2(src="img/port-blob-2.svg" alt="")
-  +wrapperDark       
+  +wrapperDark 
+block scripts
+  script(src="js/loader.js")
+  script(src="js/app.js")
+  script(src="js/common.js")
+  script(src="js/index.js")

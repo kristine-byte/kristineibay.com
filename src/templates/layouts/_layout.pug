@@ -3,13 +3,31 @@ doctype html
 html(lang="en")
   head
     include _head
-
+    style.
+      .loader canvas {
+        display: block;
+        position: absolute;
+        color: red;
+      }
+      .loader p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 9;
+        color: #00113B;
+        text-align: center;
+        width: 400px;
+        margin-left: -200px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
   body(class=bodyClass)
-    .loader
+    .loader#loader
+      p One moment please
     .page(class=pageClass)
       block content
       .cursor
     block scripts
+      script(src="js/loader.js")
       script(src="js/app.js")
       script(src="js/common.js")
-      script(src="js/index.js")

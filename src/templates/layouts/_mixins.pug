@@ -5,7 +5,7 @@
 mixin header(classHeader, classBurger)
 	.header.js-header#header(class=classHeader)
 		.header__center.center
-			a.header__logo(href="index.html") KRISTINE IBAY
+			a.header__logo(href="/") KRISTINE IBAY
 				img.header__pic(src="img/logo.svg" alt="")
 			.header__social.header__social_main
 			button.header__burger.js-header-burger(class=classBurger)
@@ -13,7 +13,7 @@ mixin header(classHeader, classBurger)
 			.header__bg
 				img(src="img/menu-bg.svg" alt="")
 			.header__preview
-				a.header__logo(href="index.html") KRISTINE IBAY
+				a.header__logo(href="/") KRISTINE IBAY
 					img.header__pic(src="img/logo.svg" alt="")
 				//.header__img
 					img.header__pic(src="img/bg-header.png" alt="")
@@ -86,6 +86,23 @@ mixin footerTiny
 			.footer__body
 				.footer__copyright.h6 Thank you for visiting.
 				a.footer__scroll.js-scroll(href="#header") Back to top
+
+mixin projectThumb(title, subtitle, img, href)
+	.project(data-aos="fade" data-aos-offset="300")
+		.project__img
+			p.project__title(data-aos="transform" data-aos-offset="300")= title
+			p.project__subtitle(data-aos="transform" data-aos-offset="300")= subtitle
+		.project__img-img
+			.reveal-image
+				img.lazy(src="img/thumb-lazy.png" data-original=img alt=title)
+			.image-inner
+			.project__btn-details
+				.btn
+					a(href=href).cta
+						span View Case Study
+						svg(width="13px" height="10px" viewBox="0 0 13 10")
+							path(d="M1,5 L11,5")
+							polyline(points="8 1 12 5 8 9")
 
 mixin descPreview(src, delay)
 	.desc__preview(data-aos="animation-translate-y" data-aos-delay=delay)
